@@ -13,7 +13,7 @@ Steps:
 
 (4) Open application/config/email.php and enter your information for sending emails.
 
-(5) Also check out application/config.inviter.php and change as needed.
+(5) Also check out application/config/inviter.php and change as needed.
 
 More documentation to come as I polish this up...
 
