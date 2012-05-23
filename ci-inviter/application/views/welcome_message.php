@@ -8,7 +8,7 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8">
-	<title>Welcome to CodeIgniter</title>
+	<title>CI Inviter</title>
 
 	<style type="text/css">
 
