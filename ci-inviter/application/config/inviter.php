@@ -19,7 +19,7 @@ $config['website_description'] = 'YOUR WEBSITE DESCRIPTION';
 */
 $config['default_replyto'] = 'EMAIL TO REPLY TO';
 $config['default_subject'] = 'YOUR DEFAULT SUBJECT';
-$config['default_messsage'] = 'YOUR DEFAULT MESSAGE';
+$config['default_message'] = 'YOUR DEFAULT MESSAGE';
 
 /* End of file inviter.php */
 /* Location: ./application/config/inviter.php */
