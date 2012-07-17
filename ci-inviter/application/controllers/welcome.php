@@ -96,7 +96,7 @@ class Welcome extends CI_Controller {
                 $this->email->reply_to($this->config->item('default_replyto', 'inviter'), $this->config->item('website_name', 'inviter'));
                 $this->email->bcc($this->input->post('to'));
                 $this->email->subject($this->input->post('subject'));
-                $this->email->message($this->textarea->post('message'));
+                $this->email->message($this->input->post('message'));
                 //$this->email->set_alt_message();
                 if ( ! $this->email->send())
                 {
