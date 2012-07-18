@@ -24,7 +24,6 @@ class Welcome extends CI_Controller {
 
                 $this->load->library('inviter');
                 $this->config->load('inviter', TRUE);
-                $user_email = '';
 	}
 
 	public function index()
@@ -49,9 +48,8 @@ class Welcome extends CI_Controller {
                     error_reporting(E_ALL);
                     $this->load->library('Inviter');
                     $provider = $this->input->post('email_provider');
-                    $this->user_email = $this->input->post('email');
                     $password = $this->input->post('password');
-                    $data['contacts'] = $this->inviter->grab_contacts($provider, $this->user_email, $password);
+                    $data['contacts'] = $this->inviter->grab_contacts($provider, $this->input->post('email'), $password);
                     $this->load->view('contacts', $data);
                 }
 
@@ -92,7 +90,7 @@ class Welcome extends CI_Controller {
 
                 $this->load->library('email');
                 $this->email->print_debugger();
-                $this->email->from($this->user_email);
+                $this->email->from($this->config->item('default_replyto', 'inviter'));
                 $this->email->reply_to($this->config->item('default_replyto', 'inviter'), $this->config->item('website_name', 'inviter'));
                 $this->email->bcc($this->input->post('to'));
                 $this->email->subject($this->input->post('subject'));
