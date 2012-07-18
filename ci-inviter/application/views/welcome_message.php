@@ -63,17 +63,33 @@
 		margin: 20px 0 0 0;
 	}
 	
+	/**CI-Inviter Style**/
+
 	#container{
-		margin: 10px;
 		border: 1px solid #D0D0D0;
+                width: 300px;
+                margin: 0 auto;
 		-webkit-box-shadow: 0 0 8px #D0D0D0;
 	}
+
+        label{
+                margin: 10px;
+        }
+
+        input{
+                margin: 10px;
+                width: 90%;
+        }
+
+        h1{
+                text-align: center;
+        }
 	</style>
 </head>
 <body>
 
 <div id="container">
-	<h1>OpenInviter for Codeigniter</h1>
+	<h1>CI-Inviter</h1>
 
 	<?php echo validation_errors(); ?>
 
