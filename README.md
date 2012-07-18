@@ -7,7 +7,7 @@ Steps:
 
 (1) Install Codeigniter.
 
-(2) Download the General version of OpenInviter from openinviter.com and place it in your root directory. Follow the OpenInvtier installation steps.
+(2) Download the General Version of OpenInviter from openinviter.com and place it in your root directory. Follow the OpenInvtier installation steps.
 
 (3) Upload the CI-Inviter file structure to your Project.
 
