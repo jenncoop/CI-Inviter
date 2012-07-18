@@ -19,6 +19,6 @@ More documentation to come as I polish this up...
 
 Current Versions: 
 
-Codeigniter v 2.1.0 
+Codeigniter v 2.1.2
 
 Openinviter General v 1.9.6
