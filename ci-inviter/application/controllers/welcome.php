@@ -34,7 +34,7 @@ class Welcome extends CI_Controller {
         public function openinviter(){
 
                 $this->load->library('form_validation');
-                $this->form_validation->set_rules('email', 'Email', 'required');
+                $this->form_validation->set_rules('email', 'Email', 'required|valid_email');
                 $this->form_validation->set_rules('password', 'Password', 'required');
                 $this->form_validation->set_rules('email_provider', 'Email Provider', 'required');
 
