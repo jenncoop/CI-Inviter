@@ -45,7 +45,7 @@
                     <input type="input" class="short-text" name="subject" value="<?php echo $default_subject ?>" /><br />
                     <br />
                     <div class="label-wrapper"><label for="message">Message: </label></div>
-                    <textarea type="input" class="long-text" name="message" value="<?php echo $default_message ?>"></textarea><br />
+                    <textarea rows="15" cols="60" class="long-text" name="message"><?php echo $default_message ?></textarea><br />
                     <br />
                     <input type="submit" name="submit" value="Send!" />
 
