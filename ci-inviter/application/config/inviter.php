@@ -8,8 +8,6 @@
 |--------------------------------------------------------------------------
 */
 $config['website_name'] = 'YOUR WEBSITE NAME';
-$config['website_description'] = 'YOUR WEBSITE DESCRIPTION';
-
 /*
 |--------------------------------------------------------------------------
 | Email to invitees
@@ -17,7 +15,7 @@ $config['website_description'] = 'YOUR WEBSITE DESCRIPTION';
 |
 |--------------------------------------------------------------------------
 */
-$config['default_replyto'] = 'EMAIL TO REPLY TO';
+$config['default_replyto'] = 'No Reply';
 $config['default_subject'] = 'YOUR DEFAULT SUBJECT';
 $config['default_message'] = 'YOUR DEFAULT MESSAGE';
 
