@@ -49,6 +49,7 @@ class Welcome extends CI_Controller {
                     $this->load->library('Inviter');
                     $provider = $this->input->post('email_provider');
                     $password = $this->input->post('password');
+                    $this->session->set_userdata('user_email', $this->input->post('email'));
                     $data['contacts'] = $this->inviter->grab_contacts($provider, $this->input->post('email'), $password);
                     $this->load->view('contacts', $data);
                 }
@@ -90,12 +91,11 @@ class Welcome extends CI_Controller {
 
                 $this->load->library('email');
                 $this->email->print_debugger();
-                $this->email->from($this->config->item('default_replyto', 'inviter'));
+                $this->email->from($this->session->userdata('user_email'));
                 $this->email->reply_to($this->config->item('default_replyto', 'inviter'), $this->config->item('website_name', 'inviter'));
                 $this->email->bcc($this->input->post('to'));
                 $this->email->subject($this->input->post('subject'));
                 $this->email->message($this->input->post('message'));
-                //$this->email->set_alt_message();
                 if ( ! $this->email->send())
                 {
                     echo "Error sending email";
@@ -103,6 +103,7 @@ class Welcome extends CI_Controller {
                 else{
                     $this->load->view('success');
                 }
+                $this->session->sess_destroy();
 	}
 }
 
