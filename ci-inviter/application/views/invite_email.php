@@ -12,6 +12,13 @@
         <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
         <script type="text/javascript" src="<?php echo base_url().'/js/gen.js' ?>"></script>
         <style type="text/css">
+            body {
+                    background-color: #fff;
+                    margin: 40px;
+                    font: 13px/20px normal Helvetica, Arial, sans-serif;
+                    color: #4F5155;
+            }
+            
             #wrapper{
                 margin: 0 auto;
                 width: 700px;
@@ -30,6 +37,7 @@
                 width: 100px;
                 float: left;
             }
+            
         </style>
     </head>
     <body>
