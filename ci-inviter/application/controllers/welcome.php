@@ -74,14 +74,6 @@ class Welcome extends CI_Controller {
                 }
         }
 
-        /**
-	 * Send email message to invitees
-	 *
-	 * @param	string
-	 * @param	string
-	 * @param	array
-	 * @return	void
-	 */
 	public function send_email()
 	{
                 $this->load->library('form_validation');
